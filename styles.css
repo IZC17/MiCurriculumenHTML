@@ -1,0 +1,171 @@
+body{
+    background-color: #0d1b2a;
+    width: 1500px;
+    height: 1500px;
+    padding: 10px;
+    border-color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+}
+  
+.seccion{
+    background-color:#364156;
+    border-color: black;
+    margin: 15px;
+}
+
+
+.contenedor {
+    background-color: #0d1b2a;
+    width: 100%;
+    height: 100%;
+    border-color: black;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 30% 30% 20% ;
+    grid-template-areas: 
+    "d1 d1"
+    "d2 d3"
+    "d4 d3"
+    "d5 d6"
+    ;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+.personaldata{
+    grid-area: d1;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        
+    
+}
+    .encabezado{
+        margin: 0px;
+        padding: 0px;
+        border: 1px black;
+    }
+        .foto{
+            border-radius: 100%;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(116, 13, 13);
+        }
+        
+            .perfil{
+                width: 90%;
+                height: 90%;
+                border-radius: 100%;
+            }
+
+        .nombre{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            font-size:x-large;
+            font-weight: 600;
+            
+            
+        }
+
+        .contacto{
+            width: 300px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .boton{
+            width: 250px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 8%;
+            color: rgb(255, 255, 255);
+            }
+
+                .telefono{
+                background-color: rgb(14, 190, 70);
+             }
+
+                .linkedin{
+                background-color: rgb(17, 17, 136);
+             }
+
+             .github{
+                background-color: black;
+                }
+
+
+
+.aboutme{
+    grid-area: d2;
+    padding: 2%;
+}
+.aboutme h2{
+    margin: 2%;
+}
+    .aboutme p{text-align: justify;
+        font-size: medium;
+        margin: 2%;
+    }
+
+.education{
+    grid-area: d3;
+    padding: 2%; 
+}
+    .education h2{
+    margin: 2%;
+    }
+
+    .education h3{
+        margin: 1%;
+        margin-top: 2%;
+        }
+
+    .education h4{
+      margin: 1%;
+     }
+
+    .education p{
+        margin: 0.5%;
+        text-align: justify;
+        padding-left: 3%;
+    }
+
+
+.skills{
+    grid-area: d4;
+    padding: 2%;
+}
+
+    .skills h2{
+        margin: 2%;
+    }
+    .skills p{
+        margin: 0.5%;
+        text-align: justify;
+        padding-left: 3%;
+    }
+
+.refs{
+    grid-area: d5;
+    ;
+    
+}
+
+.hobbies{
+    grid-area: d6;
+    
+    
+}
