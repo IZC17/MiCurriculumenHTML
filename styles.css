@@ -131,10 +131,12 @@ body{
     .education h3{
         margin: 1%;
         margin-top: 2%;
+        text-align:left;
         }
 
     .education h4{
       margin: 1%;
+      text-align: left;
      }
 
     .education p{
@@ -163,9 +165,86 @@ body{
     ;
     
 }
+    .refs p{
+        text-align: center;
+        font-weight: 400;
+        font-size: large;
+
+    }
 
 .hobbies{
     grid-area: d6;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: 
+    "h2 h2 h2"
+    "img1 img2 img3"
+    "ph1 ph2 ph3";
+    justify-content: center;
+    align-items: center;
     
     
 }
+    .hobbies h2{
+        grid-area: h2;
+    }
+
+    .aprender{
+        grid-area: img1;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: black;}
+
+        .imgaprender{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            
+            }
+        
+
+    
+    .videojuegos{
+        grid-area: img2;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        background-color: aliceblue;
+        
+
+    }
+    .videos{
+        grid-area: img3;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    .textovideojuegos{
+        grid-area: ph1;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .textovideos{
+        grid-area: ph2;
+        background-color: aqua;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .textoaprender{
+        grid-area: ph3;
+        align-items: center;
+        justify-content: center;
+    }
